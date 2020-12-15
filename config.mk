@@ -24,6 +24,7 @@ SHELL           ?= /bin/sh
 ENV             := $$VIRTUAL_ENV
 ENV_BIN         += $(ENV)/bin
 PY_TEST         += $(ENV_BIN)/pytest
+PY_INSTALLER    += $(ENV_BIN)/pyinstaller
 PIP             += $(ENV_BIN)/pip
 PY_INTERP       += $(ENV_BIN)/python3
 CURR_DIR        := $(shell basename `pwd`)
@@ -67,6 +68,8 @@ define debug_print
 	printf "$(BWhite)Bin: $(Reset)$(BGreen)$(ENV_BIN)$(Reset)\n"
 	printf "$(BWhite)Pip: $(Reset)$(BGreen)$(PIP)$(Reset)\n"
 	printf "$(BWhite)Python: $(Reset)$(BGreen)$(PY_INTERP)$(Reset)\n"
+	printf "$(BWhite)Pytest: $(Reset)$(BGreen)$(PY_TEST)$(Reset)\n"
+	printf "$(BWhite)Pyinstaller: $(Reset)$(BGreen)$(PY_INSTALLER)$(Reset)\n"
 	printf "$(BWhite)Package Name: $(Reset)$(BGreen)$(PKG_NAME)$(Reset)\n"
 	printf "$(BWhite)Version: $(Reset)$(BGreen)$(VERSION)$(Reset)\n"
 	printf "$(BWhite)Depencies file: $(Reset)$(BGreen)$(DEPENDS)$(Reset)\n"
