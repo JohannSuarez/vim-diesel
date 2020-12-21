@@ -13,9 +13,9 @@ import sys
 import yaml
 
 # diesel
-import system_config as sysconf
-from system_config import SystemConfigKeywords as sck
-from system_config import PluginConfigKeyWords as pck
+import vimdiesel.vimdlib.diesel_configuration as sysconf
+from vimdiesel.vimdlib.diesel_configuration import SystemConfigKeywords as sck
+from vimdiesel.vimdlib.diesel_configuration import PluginConfigKeyWords as pck
 
 
 class _DieselManager:

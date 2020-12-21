@@ -14,7 +14,7 @@ from typing import Literal
 from colorama import Back, Fore, init
 
 # diesel
-import vimdiesel.lib.diesel_configuration as sysconf
+import vimdiesel.vimdlib.diesel_configuration as sysconf
 
 init(autoreset=True)
 
