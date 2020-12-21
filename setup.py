@@ -1,6 +1,5 @@
 """
-When packaging LTF software, as libraries, or applications
-this is the setup.py template that should be used
+Setup
 """
 from setuptools import setup
 
@@ -26,7 +25,7 @@ setup(name=PKG_NAME,
       install_requires=requirements,
       author=AUTHOR,
       author_email=EMAIL,
-      description="A modular asynchronous neovim plugin/package manager",
+      description="A modular asynchronous neovim plugin/package helper",
       long_description=long_description,
       long_description_content_type="text/markdown",
       url=REPO_URL,

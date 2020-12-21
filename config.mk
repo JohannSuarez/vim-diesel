@@ -55,7 +55,7 @@ PEDANTIC        := $(VERBOSE) $(SHOW_FIXTURES) $(TRACE_BACK)
 
 # Global Procedures
 
-# Test to see if users Virtual Env is activated, also check for foxhound specific environment variables
+# Test to see if users Virtual Env is activated
 define _test_env =
 	[ -z $(ENV) ] && printf "$(BRed)You have not activated your virtual environment ... exiting\n$(Reset)" && exit 0
 endef
