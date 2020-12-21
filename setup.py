@@ -7,7 +7,7 @@ from setuptools import setup
 AUTHOR = 'Matt Williams'
 VERSION = '0.1.0'
 LICENSE = 'GPLv3'
-PKG_NAME = 'vimdiesel'
+PKG_NAME = 'vim-diesel'
 REPO_URL = 'https://github.com/mattcoding4days/vim-diesel'
 EMAIL = 'mattltf@pm.me'
 
