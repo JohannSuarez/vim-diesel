@@ -25,6 +25,8 @@ ENV             := $$VIRTUAL_ENV
 ENV_BIN         += $(ENV)/bin
 PY_TEST         += $(ENV_BIN)/pytest
 PY_INSTALLER    += $(ENV_BIN)/pyinstaller
+MYPY    		+= $(ENV_BIN)/mypy
+STUBGEN   		+= $(ENV_BIN)/stubgen
 PIP             += $(ENV_BIN)/pip
 PY_INTERP       += $(ENV_BIN)/python3
 CURR_DIR        := $(shell basename `pwd`)
@@ -70,6 +72,8 @@ define debug_print
 	printf "$(BWhite)Python: $(Reset)$(BGreen)$(PY_INTERP)$(Reset)\n"
 	printf "$(BWhite)Pytest: $(Reset)$(BGreen)$(PY_TEST)$(Reset)\n"
 	printf "$(BWhite)Pyinstaller: $(Reset)$(BGreen)$(PY_INSTALLER)$(Reset)\n"
+	printf "$(BWhite)Mypy: $(Reset)$(BGreen)$(MYPY)$(Reset)\n"
+	printf "$(BWhite)Stubgen: $(Reset)$(BGreen)$(STUBGEN)$(Reset)\n"
 	printf "$(BWhite)Package Name: $(Reset)$(BGreen)$(PKG_NAME)$(Reset)\n"
 	printf "$(BWhite)Version: $(Reset)$(BGreen)$(VERSION)$(Reset)\n"
 	printf "$(BWhite)Depencies file: $(Reset)$(BGreen)$(DEPENDS)$(Reset)\n"
