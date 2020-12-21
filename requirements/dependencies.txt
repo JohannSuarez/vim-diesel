@@ -14,5 +14,4 @@ pytest==6.2.0
 toml==0.10.2
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
--e git+https://github.com/mattcoding4days/vim-diesel.git@1ce1d79a5a1e23b6ed1493d04dad583fefd95203#egg=vimdiesel
 yapf==0.30.0
