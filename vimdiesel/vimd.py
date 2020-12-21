@@ -9,11 +9,9 @@ Main file
 # 3rd party
 
 # vim-diesel library
-from vimdiesel.vimdutils import diesel_logger as dl
+from vimdiesel.vimdutils.diesel_logger import DieselLogger
 
-logger = dl.DieselLogger().get_logger()
-
-logger.info('Testing')
+logger = DieselLogger().get_logger()
 
 
 class VimDiesel:
@@ -23,4 +21,8 @@ class VimDiesel:
 
 
 if __name__ == '__main__':
-    logger.info('Testing')
+    logger.info('This is an informational message')
+    logger.debug('This is a debug message')
+    logger.warning('This is a warning message')
+    logger.error('This is an error message')
+    logger.critical('This is a system critical message')
