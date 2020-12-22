@@ -48,11 +48,6 @@ class DieselLogger:
             dictConfig(sysconf.LOGGING_CONFIG)
         except ValueError as error:
             print(
-                f'{Fore.RED}Loading default logging config failed, syntax error\n\n{error}'
-            )
-            sys.exit(1)
-        except KeyError as error:
-            print(
                 f'{Fore.RED}Loading logging config failed, syntax error\n\n{error}'
             )
             sys.exit(1)
