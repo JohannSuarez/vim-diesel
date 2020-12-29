@@ -21,7 +21,7 @@ define help_show
 	debug-print     |    Print out all variable values             |    make debug-print
 	build           |    Build single packaged binary              |    make build
     install         |    Install binary on system                  |    make install
-    development     |    Install $(PKG_NAME) for local dev           |    make development
+    development     |    Install $(PKG_NAME) for local dev          |    make development
 
 	EOF
 endef
